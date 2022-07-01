@@ -25,9 +25,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Sketches</h4>
-                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <button type="button" id="closer" data-dismiss="modal">&times;</button>
                 </div>
-
                 <div class="modal-body">
                     <img src="sketch1.png">
                     <img src="sketch2.png">
@@ -36,14 +35,12 @@
         </div>
 
         <h1>Sketch Identification
-            <button class="btn btn-info" id="show_sketch" data-toggle="modal" data-target="#myModal">Show Sketches</button>
+            <button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketch</button>
         </h1>
-        <p id="your_sketch">Your Sketch : </p>
-        <p id="confidence">Confidence : </p>
-        <p id="sketch_to_be_drawn">Sketch To Be Drawn</p>
-        <span id="score">Score : </span>
-        <br>
-        <span id="timer">Timer : </span>
+        <p id="label">Label :</p>
+        <p id="confidence">Confidence :</p>
+        <button class="btn btn-danger btn-lg" onclick="clearcanvas();">Clear Canvas</button>
     </center>
+
     <script src="main.js"></script>
 </body>
